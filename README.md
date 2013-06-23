@@ -1,9 +1,9 @@
-# Motherplate: A SCSS, HTML5, CSS3, Responsive Boilerplate
+# BlankPlate: A HTML, Sass (scss) Boilerplate
 
 ## What is this?
-This is a bare bones boilerplate/SCSS framework I'll start off most web projects with.
+It's a bare bones boilerplate/SCSS framework I'll start off most web projects with.
 
-It includes a CSS reset and a bunch of minimal boilerplate styles that should come in useful for any project, including a responsive grid, typography, icons and forms.
+It includes a CSS reset and a bunch of minimal boilerplate styles that should come in useful for any project.
 
 It is not as in depth as something like <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> and doesn't include styled components like <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>.
 
@@ -12,8 +12,6 @@ It can be used for a static web project as is, or you can copy the CSS folder in
 ## Features
 * Uses SASS partials to help structure the CSS.
 * Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.).
-* Responsive-ready 12-column grid system to work across all devices.
-* Uses Font-Awesome icon fonts for icons.
 * Uses Normalize to reset browser styles.
 * Only enough CSS to get you started; no visual styling with this boilerplate.
 * Only the HTML/JS you need to get started; very little components with this boilerplate.
@@ -22,7 +20,7 @@ It can be used for a static web project as is, or you can copy the CSS folder in
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Ruby
-Motherplate uses SASS and Compass, which rely on Ruby.
+BlankPlate uses SASS and Compass, which rely on Ruby.
 
 Macs come pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a>.
 
@@ -33,7 +31,7 @@ $ gem update --system
 $ gem install compass
 ```
 
-### Download Motherplate
+### Download BlankPlate
 Download and copy the motherplate files into your new project folder.
 
 ### Run compass watch
@@ -53,24 +51,18 @@ If you were working on a Rails project for example, you could just copy the file
 A bare bones index.html template.
 
 ## CSS
-* **_config.scss** Put all your variables in here e.g. colors, padding, border radius - this helps with consistency across your project.
+* **_variable.scss** Put all your variables in here e.g. colors, padding, border radius - this helps with consistency across your project.
 * **_forms.scss** Some basic form styles.
-* **_grid.scss** A basic responsive grid system with 12 columns.
-* **_icons.scss** This is Font Awesome's CSS stylesheet.
-* **_ie.scss** Any styles that you need to add in order for Internet Explorer to work.
-* **_layout.scss** This is where your main styles go. I typically have header, footer, logo classes here.
-* **_links.scss** Styles for any text links and/or buttons.
-* **_media.scss** Styles for images, video etc.
+* **_layout.scss** This is where your main styles go. I typically have header, footer, nav, logo classes here.
+* **_links-buttons.scss** Styles for any text links and/or buttons.
 * **_mixins.scss** Reusabled SASS mixins e.g. clearfix.
-* **_other.scss** Small reusable other styles that don't fit the rest of the framework.
+* **_helper-classes.scss** Small reusable other styles that don't fit the rest of the framework.
 * **_print.scss** Basic print stylesheets to make your pages look better when printed.
 * **_reset.scss** This is normalize.
-* **_responsive.scss** Add any responsive styles here e.g. hide elements, show elements, resize elements.
-* **_retina.scss** Style for retina/high-def displays e.g. large images.
 * **_shame.scss** Keep this to hand for any quick and dirty CSS you need to add but plan to tidy later.
 * **_tables.scss** Styles for tables.
 * **_type.scss** Basic styling for your typography.
-* **main.scss** This brings all the partials together. Compass only compiles files that don't have an underscore
+* **main.scss** This brings all the partials together. Compass only compiles files that don't have an underscore. Don't write any css in this file. It's just to combine.
 * **/assets** Any images that the CSS references e.g. an image sprite, goes in here.
 * **/assets/fonts** For any fonts you reference in CSS including icon fonts or @font-face.
 
@@ -87,7 +79,12 @@ Typical files I'll end up adding include _nav.scss, _notifications.scss, _home.s
 * Images referenced in the HTML are stored in the /img folder.
 
 ## Documentation ##
+* <a href="https://github.com/leemunroe/motherplate">Motherplate</a>
 * <a href="http://compass-style.org/">Compass Framework</a>
 * <a href="http://sass-lang.com/">SASS</a>
 * <a href="http://necolas.github.com/normalize.css/">normalize.css</a>
-* <a href="http://fontawesome.io/">Font Awesome</a>
+* <a href="http://csswizardry.com/2013/04/shame-css/">Shame css</a>
+
+
+
+

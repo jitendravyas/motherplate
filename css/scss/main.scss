@@ -5,20 +5,17 @@
 @import "reset";
 
 // Set variables and reusable mixins
-@import "config";
+@import "variable";
 @import "mixins";
 
 // Import typical layout sass modules
 @import "grid";
 @import "type";
 @import "media";
-@import "links";
-@import "tables";
-@import "forms";
+@import "links-buttons";
+// @import "tables";
+// @import "forms";
 @import "other";
-
-// Use Font Awesome for icons
-@import "icons";
 
 // Specific project styles, add any section specific sass modules here
 @import "layout";
@@ -27,9 +24,6 @@
 @import "responsive";
 @import "retina";
 @import "print";
-
-// If IE support is needed
-@import "ie";
 
 // For anything quick and dirty that needs thrown in
 @import "shame";
